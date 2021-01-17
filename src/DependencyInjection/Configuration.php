@@ -27,10 +27,9 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $root = $treeBuilder->root('botman');
+        $treeBuilder = new TreeBuilder('botman');
 
-        $root
+        $treeBuilder->getRootNode()
             ->children()
                 ->scalarNode('controller')
                     ->defaultValue('App\Controller\WebhookController')
@@ -61,8 +60,8 @@ class Configuration implements ConfigurationInterface
 
     private function addFacebookConfiguration(): NodeDefinition
     {
-        $treeBuilder = new TreeBuilder();
-        $node = $treeBuilder->root('facebook');
+        $treeBuilder = new TreeBuilder('facebook');
+        $node = $treeBuilder->getRootNode();
 
         $node
             ->children()
@@ -125,8 +124,8 @@ class Configuration implements ConfigurationInterface
 
     private function addTelegramConfiguration(): NodeDefinition
     {
-        $treeBuilder = new TreeBuilder();
-        $node = $treeBuilder->root('telegram');
+        $treeBuilder = new TreeBuilder('telegram');
+        $node = $treeBuilder->getRootNode();
 
         $node
             ->children()
@@ -154,8 +153,8 @@ class Configuration implements ConfigurationInterface
 
     private function addHttpNode(): NodeDefinition
     {
-        $treeBuilder = new TreeBuilder();
-        $node = $treeBuilder->root('http');
+        $treeBuilder = new TreeBuilder('http');
+        $node = $treeBuilder->getRootNode();
 
         $node
             ->addDefaultsIfNotSet()
