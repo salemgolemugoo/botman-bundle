@@ -39,20 +39,20 @@
         "botman/driver-twilio": "^1.0",
         "botman/driver-twitter": "^1.0",
         "botman/driver-wechat": "^1.0",
-        "illuminate/support": "^5.6",
+        "illuminate/support": "^8.22",
         "matthiasnoback/symfony-config-test": "^4.0",
-        "matthiasnoback/symfony-dependency-injection-test": "^3.0",
-        "php-http/guzzle6-adapter": "^1.1",
-        "php-http/httplug-bundle": "^1.11",
-        "phpstan/phpstan": "^0.10.3",
-        "phpstan/phpstan-phpunit": "^0.10.0",
-        "phpstan/phpstan-symfony": "^0.10.1",
-        "phpunit/phpunit": "^7.3",
-        "symplify/easy-coding-standard": "^4.6"
+        "matthiasnoback/symfony-dependency-injection-test": "^4.0",
+        "php-http/guzzle6-adapter": "^2.0",
+        "php-http/httplug-bundle": "^1.20",
+        "phpstan/phpstan": "^0.12",
+        "phpstan/phpstan-phpunit": "^0.12",
+        "phpstan/phpstan-symfony": "^0.12",
+        "phpunit/phpunit": "^9.5",
+        "symplify/easy-coding-standard": "^9.0"
     },
     "suggest": {
         "botman/driver-telegram": "^1.5",
-        "php-http/httplug-bundle": "^1.11"
+        "php-http/httplug-bundle": "^1.20"
     },
     "config": {
         "preferred-install": {
